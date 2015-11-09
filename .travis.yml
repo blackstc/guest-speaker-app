@@ -1,12 +1,16 @@
 language: node_js
-
 node_js:
-  - "4.1"
-  - "4.0"
-  - "0.12"
-  - "0.11"
-
+- '4.1'
+- '4.0'
+- '0.12'
+- '0.11'
 before_script:
-  - npm i -g mocha
-
+- npm i -g mocha
 script: mocha
+deploy:
+  provider: heroku
+  api_key:
+    secure: i5wachTXwQtcvlU1gj9hTXQbJG+7r411Y9caq05wF30iPfl7VBGr88JPDbKnKYwUQ1KlgCuZZL5ly9BtANufyRlBPkjtx/f6rKksqlFK6K1YUEdE+h8983PmDSBx27TOVYmAD4lthnI7UTixW8BjSjGsj1hkDb3ao+iWx2YoHjdNilAnmueGa5Ch5P+5+Jd/90ynnWH1sdM0TwuVFEWok+qbzqWHKvZYuEgaJeg105mDsqwv9UhJYsfF1uOg6oYhtrOOKLzcOiAtYDRUafkAwJFm5DFnNx9b0zvq04AlK/2nr+GEjiu4K/ysYt7Zbt/KpXCN8rQYTvRw1B7MEgSSHna3jn7lhszgsywBILVhE/9qlLUlBAsMyhnDWT2Jihex9zorfUopnN47sFyPDdG6tToYiKBHsLFsMINHm1/rEAIbZ6MLkhJU7GqglbLF/kJ+dRx9TH+5a+1EUGB7k9J9EvMF0YMhgjz75g23VjMKQT0hD/tWmj0M0J0H5KyQ+S9JuPt11joG5DX5WOHKaADaYgU/dJblYD+GSLN2Gey/aWGfpUurRK+4H0vrhZuWApxHUSdcTRjjPG180DjDAf2DAyGwef+FaqOmmNOcsQL/rLtpf/mk/43KRngXz7SKYj7A3kUMmEMmBtLXZuj+zwETKYR8A3n9SFdbkrIJncjPMTE=
+  app: michael-herman
+  on:
+    repo: blackstc/guest-speaker-app
