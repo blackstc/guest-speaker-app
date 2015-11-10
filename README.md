@@ -45,3 +45,17 @@
 - Front End: jQuery
 - CSS Framework: Skeleton
 - Templates: Swig
+
+## Tests
+
+Without code coverage;
+
+```sh
+$ npm test
+```
+
+With code coverage:
+
+```sh
+$ npm run cov
+```
