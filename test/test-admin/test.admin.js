@@ -1,7 +1,7 @@
 var mocha = require('mocha');
 var chai = require('chai');
 var chaiHttp = require('chai-http');
-var server = require('../src/server/app');
+var server = require('../../src/server/app');
 
 var should = chai.should();
 chai.use(chaiHttp);

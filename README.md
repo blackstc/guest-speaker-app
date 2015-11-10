@@ -19,12 +19,19 @@
 
 ## User Stories
 
-1. As a user-
-  - Story 1
-  - Story 2
+1. As a user can-
+  - view upcoming speakers
+  - view past speakers
+  - add feedback on past speakers
+  - vote on potential upcoming topics
+  - login/logout via Github
+  - suggest new speakers/topics
 1. As an admin-
-  - Story 1
-  - Story 1
+  - approve/reject users
+  - CRUD students
+  - CRUD speakers
+  - CRUD topics
+  - toggle suggestion Feature
 
 ## Stack
 
