@@ -9,7 +9,7 @@ before_script:
 - npm i -g mocha
 - npm i -g coveralls
 script: npm run cov
-after_scrip: npm run send-cov
+after_script: npm run send-cov
 deploy:
   provider: heroku
   api_key:
