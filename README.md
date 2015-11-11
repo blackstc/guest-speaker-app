@@ -1,6 +1,6 @@
 # Guest Speaker App
 [![Build Status](https://travis-ci.org/blackstc/guest-speaker-app.svg?branch=master)](https://travis-ci.org/blackstc/guest-speaker-app)
-
+[![Coverage Status](https://coveralls.io/repos/blackstc/guest-speaker-app/badge.svg?branch=master&service=github)](https://coveralls.io/github/blackstc/guest-speaker-app?branch=master)
 ## Overview
 1. Part 1
   - App overview
