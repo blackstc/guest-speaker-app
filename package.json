@@ -6,7 +6,7 @@
     "start": "node ./src/server/bin/www",
     "test": "mocha --recursive",
     "cov": "istanbul cover _mocha -- --recursive -R spec",
-    "send-cov": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
+    "send-coverage": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
   },
   "dependencies": {
     "body-parser": "~1.13.2",
@@ -25,6 +25,7 @@
     "browser-sync": "2.9.6",
     "chai": "^3.4.1",
     "chai-http": "^1.0.0",
+    "coveralls": "^2.11.4",
     "gulp": "^3.9.0",
     "gulp-clean": "^0.3.1",
     "gulp-concat": "^2.6.0",
